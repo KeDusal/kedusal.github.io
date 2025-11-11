@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - TOVIDAKOU Bienvenu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- ===== Sidebar (Menu de Navigation) ===== -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="images/Bienvenu.jpg" alt="Photo de TOVIDAKOU Bienvenu" class="profile-pic">
+            <h2 class="profile-name">TOVIDAKOU Bienvenu</h2>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cv.html">Mon CV</a></li>
+                <li><a href="portfolio.html">Mon Portfolio</a></li>
+                <li><a href="exercices.html">Exercices</a></li>
+                <li><a href="formulaire.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>&copy; 2025 - Site Personnel</p>
+        </div>
+    </aside>
+
+    <!-- ===== Contenu Principal ===== -->
+    <main class="main-content">
+        <header class="content-header"><h1>Formulaire de Contact</h1></header>
+        
+        <section class="card">
+            <h2>Contact & Questionnaire</h2>
+            <form method="post" action="#">
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" placeholder="Ex : DUBOIS" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" placeholder="Ex : Isaac" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required />
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Votre Message</legend>
+                    <div class="form-group">
+                        <label for="precisions">Laissez un message (facultatif)</label>
+                        <textarea id="precisions" name="precisions" rows="5" placeholder="Votre message ici..."></textarea>
+                    </div>
+                </fieldset>
+                
+                <button type="submit" class="cta-button">Envoyer</button>
+            </form>
+        </section>
+    </main>
+  </div>
+</body>
+</html>

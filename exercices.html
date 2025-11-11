@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableaux - TOVIDAKOU Bienvenu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="site-wrapper">
+        <!-- ===== Sidebar (Menu de Navigation) ===== -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="images/Bienvenu.jpg" alt="Photo de TOVIDAKOU Bienvenu" class="profile-pic">
+                <h2 class="profile-name">TOVIDAKOU Bienvenu</h2>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cv.html">Mon CV</a></li>
+                    <li><a href="portfolio.html">Mon Portfolio</a></li>
+                    <li><a href="exercices.html">Exercices</a></li>
+                    <li><a href="tableau.html" class="active">Tableaux</a></li>
+                    <li><a href="formulaire.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <p>&copy; 2025 - Site Personnel</p>
+            </div>
+        </aside>
+
+        <!-- ===== Contenu Principal ===== -->
+        <main class="main-content">
+            <header class="content-header"><h1>Démonstration de Tableaux</h1></header>
+
+            <section class="card">
+                <h2>Exemples de Tableaux HTML</h2>
+            
+                <div class="cv-grid">
+                    <div class="table-wrapper">
+                        <table>
+                            <caption>Tableau 1</caption>
+                            <tr>
+                                <td colspan="2">RGL 1</td>
+                            </tr>
+                            <tr>
+                                <td class="rgl">RGL2</td>
+                                <td>RGL 3</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="table-wrapper">
+                        <table>
+                            <caption>Tableau 2</caption>
+                            <tr>
+                                <td rowspan="2">RMS 1</td>
+                                <td>RMS 2</td>
+                            </tr>
+                            <tr>
+                                <td class="rms">RMS 3</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                 <div class="table-wrapper" style="margin-top: 30px;">
+                    <table>
+                        <caption>Tableau 3</caption>
+                        <tr>
+                            <td colspan="3">A</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">B</td>
+                            <td colspan="2">C</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>E</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
